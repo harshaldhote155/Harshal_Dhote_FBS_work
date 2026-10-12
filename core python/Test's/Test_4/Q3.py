@@ -1,5 +1,9 @@
-for i in range(12):
-    if i == 0 or i == 11:
-        print("*" * 22)
-    else:
-        print(" " * (22 - i) + "*")
+n = 22
+
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n - 1 or i + j == n - 1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
